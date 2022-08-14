@@ -2,15 +2,20 @@
 1. TIPOGRAFIA DEL SITIO
 -------------------------------------*/
 html {
-  font-size: 13px; }
+  font-size: 14px; }
 
 body {
   font-family: 'Arial';
-  color: #F1F1F2; }
+  color: #858585; }
 
 /*-------------------------------------
 2. ESTILOS GENERALES DE BOTONES
 -------------------------------------*/
+.btn {
+  border-radius: 2rem;
+  padding: .6rem 2rem;
+  font-weight: bold; }
+
 /*-------------------------------------
 3. ESTILOS COLOR PRINCIPAL
 -------------------------------------*/
@@ -20,14 +25,76 @@ body {
 .text-primary {
   color: #1995AC !important; }
 
+/*Estilos para el boton primario*/
+.btn-primary {
+  color: #fff;
+  background-color: #1995AC;
+  border-color: #1995AC;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.btn-primary:hover {
+  color: #35363c;
+  background-color: #fff;
+  border-color: #1995AC; }
+
+.btn-primary:active {
+  color: #35363c !important;
+  background-color: #1ca8c2 !important;
+  border-color: #1eb4d0 !important; }
+
+.btn-primary:focus {
+  color: #35363c !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(25, 149, 172, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(25, 149, 172, 0.5) !important; }
+
+.btn-primary:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f138";
+  position: relative;
+  left: .6rem;
+  top: .05rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease; }
+
+.btn-primary:hover:after,
+.btn-primary:focus:after,
+.btn-primary:active:after {
+  left: .25rem; }
+
+/*Animacion del boton principal*/
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.btn-primary:hover:before,
+.btn-primary:focus:before,
+.btn-primary:active:before {
+  width: 130%;
+  left: -15%; }
+
 /*-------------------------------------
 4. ESTILOS COLOR SECUNDARIO
 -------------------------------------*/
 .bg-secondary {
-  background-color: #BCBABE !important; }
+  background-color: #35363c !important; }
 
 .text-secondary {
-  color: #BCBABE !important; }
+  color: #35363c !important; }
 
 /*-------------------------------------
 5. ESTILOS PARA ".redes-sociales"
@@ -44,5 +111,85 @@ body {
   opacity: 1;
   -webkit-transform: scale(1.5) rotate(360deg);
           transform: scale(1.5) rotate(360deg); }
+
+/*-------------------------------------
+6. ESTILOS PARA ".menu-navegacion"
+-------------------------------------*/
+/*Quitamos estilos al boton por defecto*/
+#menu-navegacion .navbar-toggler {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: 0; }
+
+/*Estilos boton del menu personalizado*/
+#menu-navegacion .boton-menu:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c9";
+  font-weight: 900;
+  color: #fff;
+  font-size: 2rem; }
+
+#menu-navegacion .icono-cerrar:before {
+  content: "\f00d";
+  position: relative;
+  left: .2rem; }
+
+/*Estilos de los enlaces del menu de navegacion*/
+.navbar-dark .navbar-nav .nav-link {
+  color: fff;
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: .5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.navbar-dark .navbar-nav .nav-link:after {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  font-weight: 900;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+/*Estilos al estado hover de los enlaces del menu de navegacion*/
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #4d4e57; }
+
+.navbar-dark .navbar-nav .nav-link:hover:after {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg); }
+
+/*Estilos para el enlace activo*/
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #1995AC; }
+
+/*-----------------------------------------
+7. ESTILOS PARA EL CARRUSEL DE IMAGENES "#animacion"
+------------------------------------------*/
+.swiper-slide {
+  height: 34rem;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center center; }
+
+/*-------------------------------------
+x. MEDIAS QUERIES
+-------------------------------------*/
+@media (min-width: 768px) {
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.5rem; }
+
+  .navbar-dark .navbar-nav .nav-link:after {
+    content: ""; } }
 
 /*# sourceMappingURL=estilos.css.map */

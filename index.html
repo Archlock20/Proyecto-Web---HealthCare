@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <title>HealthCare Clinic</title>
+    <title>HealthCare-Clinic</title>
 
     <!-- CARGA DEL CSS DE BOOTSTRAP -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CARGA DEL CSS DE FONTAWESOME -->
     <link rel="stylesheet" href="css/all.css">
+    <!-- CARGA DEL CSS DE "SWIPPER" (CARRUSEL DE IMAGENES) -->
+    <link rel="stylesheet" href="css/swiper.min.css">
     <!-- CARGA DEL CSS PERSONALIZADO -->
     <link rel="stylesheet" href="css/estilos.css">
+    
 
 
 </head>
@@ -40,20 +43,111 @@
     </section>
 
     <!-- Seccion de detalles en el encabezado -->
-    <section id="detalles-encabezado">
+    <section id="detalles-encabezado" class="d-none d-md-block py-3">
+        <div class="container">
+            <div class="row justify-content-md-between align-items-md-center">
+                <div class="col-auto">
+                    <a href="#" class="logo">
+                        <img src="images/Screenshot_6.png" alt="Logo del sitio web" width="100">
+                    </a>
+                </div>
+                <div class="col-auto ml-md-auto">
+                    <i class="fas fa-phone fa-flip-horizontal fa-2x align-middle text-primary"></i>
+                    <span class="font-weight-bold h5 ml-2">+593 99 454 6987</span>
+                </div>
+                <div class="col-auto">
+                    <i class="fas fa-envelope fa-2x align-middle text-primary"></i>
+                    <span class="font-weight-bold h5 ml-2">infohealthcare@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Menu de navegacion -->
+    <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" 
+            aria-expanded="false" aria-label="Menu principal">
+            <span class="boton-menu"></span>
+            </button>
+            <a href="#" class="btn btn-primary order-md-1">Reservar una cita</a>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mt-3 mt-md-0">
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Premios</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Nuestra App</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion de carrusel de imagenes mediante Swipper -->
+    <section id="animacion" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url(images/fondo-slide-1.jpg)">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-4 font-weight-bold">
+                                El equilibrio perfecto entre salud y cuidado
+                            </h2>
+                            <a href="#" class="btn btn-primary">Reservar una cita</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url(images/fondo-slide-2.jpg)">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-4 font-weight-bold">
+                                El equilibrio perfecto entre salud y cuidado
+                            </h2>
+                            <a href="#" class="btn btn-primary">Reservar una cita</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url(images/fondo-slide-3.jpg)">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="display-4 font-weight-bold">
+                                El equilibrio perfecto entre salud y cuidado
+                            </h2>
+                            <a href="#" class="btn btn-primary">Reservar una cita</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
 
-
-
     <!-- CARGA DE JQUERY -->
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <!-- CARGA DE POPPER -->
     <script src="js/popper.min.js"></script>
     <!-- CARGA DE BOOTSTRAP -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- CATGA DE SWIPPER -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- CARGA DE SCRIPS CON DIVERSAS FUNCIONALIDADES -->
+    <script src="js/mis-scripts.js"></script>
     
 </body>
 </html>

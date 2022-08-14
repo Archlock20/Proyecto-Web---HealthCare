@@ -2,14 +2,14 @@
 //PATRONES DE COLOR
 //-------------------------------------
 $principal:#1995AC;
-$secundario:#BCBABE;
-$texto:#F1F1F2;
+$secundario:#35363c;
+$texto:#858585;
 
 /*-------------------------------------
 1. TIPOGRAFIA DEL SITIO
 -------------------------------------*/
 html{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 body{
@@ -21,6 +21,9 @@ body{
 2. ESTILOS GENERALES DE BOTONES
 -------------------------------------*/
 .btn{
+    border-radius: 2rem;
+    padding: .6rem 2rem;
+    font-weight: bold;
 
 }
 
@@ -32,6 +35,71 @@ body{
 }
 .text-primary{
     color: $principal !important;
+}
+
+/*Estilos para el boton primario*/
+.btn-primary{
+    color: #fff;
+    background-color: $principal;
+    border-color: $principal;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover{
+    color: $secundario;
+    background-color: #fff;
+    border-color: $principal;
+}
+
+.btn-primary:active{
+    color: $secundario !important;
+    background-color: lighten($principal, 5%) !important;
+    border-color: lighten($principal, 8%) !important;
+}
+
+.btn-primary:focus{
+    color: $secundario !important;
+    box-shadow: 0 0 0 0.2rem rgba($principal, .5) !important;
+}
+
+.btn-primary:after{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f138";
+    position: relative;
+    left: .6rem;
+    top: .05rem;
+    transition: left 0.3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:focus:after,
+.btn-primary:active:after{
+    left: .25rem;
+}
+
+/*Animacion del boton principal*/
+.btn-primary:before{
+    content: "";
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: skewX(45deg);
+    transition: all .5s ease;
+}
+
+.btn-primary:hover:before,
+.btn-primary:focus:before,
+.btn-primary:active:before{
+    width: 130%;
+    left: -15%;
 }
 
 /*-------------------------------------
@@ -61,3 +129,92 @@ body{
 
 }
 
+/*-------------------------------------
+6. ESTILOS PARA ".menu-navegacion"
+-------------------------------------*/
+
+/*Quitamos estilos al boton por defecto*/
+#menu-navegacion .navbar-toggler{
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+}
+
+/*Estilos boton del menu personalizado*/
+#menu-navegacion .boton-menu:before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    font-weight: 900;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#menu-navegacion .icono-cerrar:before{
+    content: "\f00d";
+    position: relative;
+    left: .2rem;
+
+}
+
+
+/*Estilos de los enlaces del menu de navegacion*/
+.navbar-dark .navbar-nav .nav-link{
+    color: fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:after{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f105";
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+/*Estilos al estado hover de los enlaces del menu de navegacion*/
+.navbar-dark .navbar-nav .nav-link:hover{
+    background-color: lighten($secundario, 10%);
+    
+}
+
+.navbar-dark .navbar-nav .nav-link:hover:after{
+    transform: rotateZ(180deg);
+}
+
+/*Estilos para el enlace activo*/
+.navbar-dark .navbar-nav .nav-link.active{
+    background-color: $principal;
+}
+
+/*-----------------------------------------
+7. ESTILOS PARA EL CARRUSEL DE IMAGENES "#animacion"
+------------------------------------------*/
+.swiper-slide{
+    height: 34rem;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*-------------------------------------
+x. MEDIAS QUERIES
+-------------------------------------*/
+
+@media (min-width:768px) {
+    .navbar-dark .navbar-nav .nav-link{
+        padding: 0.7rem 1.2rem;
+        border-radius: 1.5rem;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:after{
+        content: "";
+    }
+}
