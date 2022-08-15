@@ -24,35 +24,26 @@ $(function () {
     /*-----------------------------------------------------------
      2. INICIANDO SWIPER
      -------------------------------------------------------------*/
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#animacion', {
 
-
-
-
-
-
-
-
-
-        
         /*Botones de navegación */
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        /*Botones de paginación */
+        /*Botones de paginación - Animaciones del slider*/
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
             clickable: true,
         },
-        speed: 500,
-        effect: 'fade',
+        speed: 600,
+        effect: 'coverflow',
         grabCursor: true,
         loop: true,
-        //   autoplay: {
-        //     delay: 10000,            
-        //   },
+          autoplay: {
+            delay: 3000,            
+          },
         keyboard: {
             enabled: true,
             onlyInViewport: true,
