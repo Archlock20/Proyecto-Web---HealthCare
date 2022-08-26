@@ -191,6 +191,148 @@ body {
   bottom: 0;
   opacity: .4; }
 
+/*Botones laterales del carrusel de imagenes*/
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease; }
+
+.swiper-button-prev:before,
+.swiper-button-next:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f060"; }
+
+.swiper-button-next:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+/*Estado Hover de los botones del carrusel de imagenes*/
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.46);
+  color: #1995AC; }
+
+.swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 .4rem !important; }
+
+.swiper-pagination-bullet-active {
+  background-color: #1995AC; }
+
+/*-------------------------------------
+8. ESTILOS PARA LA SECCION DE BIENVENIDOS
+-------------------------------------*/
+.contenedor-video a {
+  background-color: rgba(255, 255, 255, 0.79);
+  width: 7rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  color: #1995AC;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.contenedor-video a:hover {
+  background-color: #1995AC;
+  color: #fff;
+  border: 10px solid rgba(255, 255, 255, 0.5); }
+
+.contenedor-video img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.contenedor-video:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+/*-------------------------------------
+9. ESTILOS PARA LA SECCION "TE AYUDAMOS"
+-------------------------------------*/
+#te-ayudamos {
+  position: relative;
+  -webkit-transform: skew(0, 6deg);
+          transform: skew(0, 6deg); }
+
+#te-ayudamos:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+#te-ayudamos .container {
+  -webkit-transform: skew(0, -6deg);
+          transform: skew(0, -6deg); }
+
+/*-------------------------------------
+10. ESTILOS PARA LA SECCION "PREMIOS"
+-------------------------------------*/
+.contador-linea {
+  background-color: #1995AC;
+  width: 4rem;
+  height: .4rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+#premios .col-6:hover .contador-linea {
+  bottom: 1rem;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+  background-color: #35363c; }
+
+/*-------------------------------------
+11. ESTILOS PARA LA SECCION "APP"
+-------------------------------------*/
+#nuestra-app:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
 /*-------------------------------------
 x. MEDIAS QUERIES
 -------------------------------------*/
@@ -200,6 +342,23 @@ x. MEDIAS QUERIES
     border-radius: 1.5rem; }
 
   .navbar-dark .navbar-nav .nav-link:after {
-    content: ""; } }
+    content: ""; }
+
+  #te-ayudamos {
+    -webkit-transform: skew(0, 2deg);
+            transform: skew(0, 2deg); }
+
+  #te-ayudamos .container {
+    -webkit-transform: skew(0, -2deg);
+            transform: skew(0, -2deg); } }
+@media (min-width: 990px) {
+  html {
+    font-size: 16px; }
+
+  .swiper-slide {
+    height: 37.5rem; } }
+@media (min-width: 1200) {
+  .swiper-slide {
+    height: 44rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

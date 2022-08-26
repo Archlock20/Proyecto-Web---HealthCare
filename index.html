@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,15 +14,19 @@
     <link rel="stylesheet" href="css/all.css">
     <!-- CARGA DEL CSS DE "SWIPPER" (CARRUSEL DE IMAGENES) -->
     <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- CARGA DEL CSS DE "VENOBOX" (VENTANA MODAL PARA VIDEO) -->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- CARGA DEL CSS DE "JARALLAX" (IMAGEN MOVIL) -->
+    <link rel="stylesheet" href="css/jarallax.css">
     <!-- CARGA DEL CSS PERSONALIZADO -->
     <link rel="stylesheet" href="css/estilos.css">
-    
+
 
 
 </head>
 
 <body>
-    
+
     <!-- Barra de contacto -->
     <section id="barra-contacto" class="bg-primary text-white py-3 py-lg-1 text-center">
         <div class="container">
@@ -66,9 +71,9 @@
     <!-- Menu de navegacion -->
     <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
         <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" 
-            aria-expanded="false" aria-label="Menu principal">
-            <span class="boton-menu"></span>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"
+                aria-expanded="false" aria-label="Menu principal">
+                <span class="boton-menu"></span>
             </button>
             <a href="#" class="btn btn-primary order-md-1">Reservar una cita</a>
 
@@ -88,11 +93,12 @@
     <!-- Seccion de carrusel de imagenes mediante Swipper -->
     <section id="animacion" class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url(images/fondo-slide-1.jpg)">
-                
+            <div class="swiper-slide d-flex justify-content-center align-items-center"
+                style="background-image:url(images/fondo-slide-1.jpg)">
+
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-9 col-sm-11">
                             <h2 class="display-4 font-weight-bold">
                                 El equilibrio perfecto entre salud y cuidado
                             </h2>
@@ -104,11 +110,12 @@
             </div>
 
 
-            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url(images/fondo-slide-2.jpg)">
-                
+            <div class="swiper-slide d-flex justify-content-center align-items-center"
+                style="background-image:url(images/fondo-slide-2.jpg)">
+
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-9 col-sm-11">
                             <h2 class="display-4 font-weight-bold">
                                 El equilibrio perfecto entre salud y cuidado
                             </h2>
@@ -118,11 +125,12 @@
                 </div>
 
             </div>
-            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url(images/fondo-slide-3.jpg)">
-                
+            <div class="swiper-slide d-flex justify-content-center align-items-center"
+                style="background-image:url(images/fondo-slide-3.jpg)">
+
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-9 col-sm-11">
                             <h2 class="display-4 font-weight-bold">
                                 El equilibrio perfecto entre salud y cuidado
                             </h2>
@@ -141,22 +149,155 @@
         <!-- Botones de paginacion para la barra de navegacion -->
         <div class="swiper-pagination"></div>
 
+    </section>
 
+    <!-- Seccioon de bienvenida -->
+    <section id="bienvenidos" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="contenedor-video d-inline-block position-relative text-truncate">
+                        <img src="images/fondo-video.jpg" alt="Imagen del video promocional del sitio"
+                            class="img-fluid">
+                        <a href="https://youtu.be/jh5U5BnpGN8" class="venobox-video" data-vbtype="video"><i
+                                class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 pt-4 pt-lg-0 text-center text-lg-left">
+                    <h2 class="display-4 font-weight-bold text-secondary mt-lg-n2">
+                        BIENVENIDOS A TU <span class="text-primary">CLINICA HEALTH-CARE.</span>
+                    </h2>
+                    <h6 class="text-black-50">
+                        SOMOS PARTE DE TI
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fugit cupiditate totam vel
+                        pariatur minima necessitatibus ad, consequatur quisquam vitae officia voluptas nesciunt magni
+                        aliquid qui cumque incidunt dolorem! Deserunt.
+                    </p>
+                    <a href="#" class="btn btn-primary mt-3">Leer mas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seccion de Ayuda -->
+    <section id="te-ayudamos" class="bg-secondary text-white text-center py-5 jarallax" data-jarallax data-speed="0.7">
+        <picture class="jarallax-img">
+            <source media="(min-width:1200px)" srcset="images/fondo-te-ayudamos-xl.jpg">
+            <source media="(min-width:768px)" srcset="images/fondo-te-ayudamos-md.jpg">
+            <img srcset="images/fondo-te-ayudamos.jpg" alt="" class="w-100">
+        </picture>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <h2 class="display-4 font-weight-bold">¿COMO PODEMOS AYUDARTE?</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sunt ipsum quibusdam culpa
+                        accusantium esse ducimus harum consectetur sapiente molestias quae repellat alias, doloribus,
+                        dolore libero quam a magni voluptate.
+                    </P>
+                    <a href="#" class="btn btn-primary">Reservar una cita</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seccion "Premios" -->
+    <section id="premios" class="py-5 text-center">
+        <div class="container py-5">
+            <h2 class="display-4 font-weight-bold text-secondary">NUESTRA CLINICA EN NUMEROS</h2>
+            <h6 class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quibusdam!</h6>
+
+            <div class="row">
+                <div class="col-6 col-md-3 py-4">
+                    <i class="far fa-calendar-alt text-primary display-4 mb-2"></i>
+                    <div class="font-weight-bold text-secondary h2">
+                        <span class="counter" data-counterup-beginat="0" data-counterup-time="500">12</span>
+                    </div>
+                    <h6>Años de experiencia</h6>
+                    <div class="contador-linea"></div>
+                </div>
+
+                <div class="col-6 col-md-3 py-4">
+                    <i class="fab fa-angellist text-primary display-4 mb-2"></i>
+                    <div class="font-weight-bold text-secondary h2">
+                        <span class="counter" data-counterup-beginat="0" data-counterup-time="1000">156</span>
+                    </div>
+                    <h6>Clientes Satisfechos</h6>
+                    <div class="contador-linea"></div>
+                </div>
+
+                <div class="col-6 col-md-3 py-4">
+                    <i class="fas fa-award text-primary display-4 mb-2"></i>
+                    <div class="font-weight-bold text-secondary h2">
+                        <span class="counter" data-counterup-beginat="0" data-counterup-time="1000">259</span>
+                    </div>
+                    <h6>Premios obtenidos</h6>
+                    <div class="contador-linea"></div>
+                </div>
+
+                <div class="col-6 col-md-3 py-4">
+                    <i class="fas fa-thumbs-up text-primary display-4 mb-2"></i>
+                    <div class="font-weight-bold text-secondary h2">
+                        <span class="counter" data-counterup-beginat="0" data-counterup-time="1000">389</span>
+                    </div>
+                    <h6>Años de experiencia</h6>
+                    <div class="contador-linea"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestra-app" class="bg-secondary py-5 text-white text-center text-center text-md-left jarallax" data-jarallax data-speed="0.7">
+        <picture class="jarallax-img">
+            <source media="(min-width:1200px)" srcset="images/fondo-descargar-app-xl.jpg">
+            <source media="(min-width:768px)" srcset="images/fondo-descargar-app-md.jpg">
+            <img srcset="images/fondo-descargar-app.jpg" alt="" class="w-100">
+        </picture>
+        <div class="container">
+            <div class="row justify-content-md-end">
+                <div class="col-12 col-md-6 ">
+                    <h2 class="h1 font-weight-bold">DESCARGA NUESTRA APP Y ACCEDE A DESCUENTOS EXCLUSIVOS</h2>
+                    <h6 class="text-white-50">SOMOS PARTE DE TI</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias sit repellendus, architecto
+                        magni ducimus odit optio maxime repudiandae iure enim!</p>
+                    <a href="#" class="btn btn-primary mt-3">Conócenos mas</a>
+
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
+
+
+    <!-- CARGA DE LOS SCRIPS NECESARIOS PARA EL PROYECTO -->
     <!-- CARGA DE JQUERY -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- CARGA DE POPPER -->
     <script src="js/popper.min.js"></script>
     <!-- CARGA DE BOOTSTRAP -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- CATGA DE SWIPPER -->
+    <!-- CARGA DE SWIPPER -->
     <script src="js/swiper.min.js"></script>
+    <!-- CARGA DE VENOBOX -->
+    <script src="js/venobox.min.js"></script>
+    <!-- CARGA DE JARALLAX -->
+    <script src="js/jarallax.min.js"></script>
+    <!-- CARGA DE PICTUREFILL -->
+    <script src="js/picturefill.min.js"></script>
+    <!-- CARGA DEL WAYPOINT -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- CARGA DE COUNTERUP -->
+    <script src="js/jquery.counterup.min.js"></script>
 
-    <!-- CARGA DE SCRIPS CON DIVERSAS FUNCIONALIDADES -->
+
+    <!-- CARGA DE SCRIPS PROPIOS CON DIVERSAS FUNCIONALIDADES -->
     <script src="js/mis-scripts.js"></script>
-    
+
 </body>
+
 </html>

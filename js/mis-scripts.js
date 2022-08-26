@@ -41,9 +41,9 @@ $(function () {
         effect: 'coverflow',
         grabCursor: true,
         loop: true,
-          autoplay: {
-            delay: 3000,            
-          },
+        //   autoplay: {
+        //     delay: 3000,            
+        //   },
         keyboard: {
             enabled: true,
             onlyInViewport: true,
@@ -60,14 +60,16 @@ $(function () {
         bgcolor: 'rgba(255, 255, 255, 0.4)',
         border: '5px',
         closeColor: '#fff',
+        closeBackground:'rgba(12, 60, 22, 0)',
+        overlayClose: false,
         overlayColor: 'rgba(12, 60, 22, 0.83)',
         spinner: 'three-bounce'
     });
 
 
     /*-----------------------------------------------------------
-4. INICIANDO jquery.counterup
--------------------------------------------------------------*/
+    4. INICIANDO jquery.counterup
+    -------------------------------------------------------------*/
     $('.counter').counterUp();
 
     /*-----------------------------------------------------------
