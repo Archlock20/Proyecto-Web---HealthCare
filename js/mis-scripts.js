@@ -94,6 +94,7 @@ $(function () {
         selectMonths: true,
         min: true,
         max: 30,
+        // Esta funcion se encarga de mostrar la fecha actual por defecto en el campo del datepicker
         onStart: function () {
             var date = new Date();
             this.set('select', [date.getFullYear(), date.getMonth(), date.getDate()]);
@@ -108,7 +109,7 @@ $(function () {
         format: 'hh:i A',
         interval: 60,
         min: [8, 00],
-        max: [18, 00]
+        max: [20, 00]
 
     });
 

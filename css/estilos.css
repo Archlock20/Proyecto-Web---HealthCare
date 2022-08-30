@@ -334,6 +334,65 @@ body {
   bottom: 0; }
 
 /*-------------------------------------
+12. ESTILOS PARA LA SECCION "CONTACTOS"
+-------------------------------------*/
+#contacto .detalle-rectangulo {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  left: 50%;
+  bottom: 0;
+  background: #1995AC;
+  -webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
+          transform: translateX(-50%) translateY(50%) rotate(45deg); }
+
+.input-group-cita {
+  margin-bottom: 0;
+  cursor: pointer; }
+
+.picker__box {
+  border: 5px solid #1995AC; }
+
+.picker--focused .picker__day--selected,
+.picker__day--selected,
+.picker__day--selected:hover {
+  background: #1995AC;
+  color: #fff; }
+
+.picker__day--today:before {
+  border-top: .5em solid #ffffff; }
+
+.picker__select--month,
+.picker__select--year {
+  margin-top: -.5em;
+  padding: 0 .5rem;
+  border-radius: .5rem; }
+
+.picker--focused .picker__list-item--selected,
+.picker__list-item--selected,
+.picker__list-item--selected:hover {
+  background: #1995AC; }
+
+.picker__list-item--highlighted,
+.picker__list-item:hover {
+  border-color: #136e7f; }
+
+.picker__list {
+  padding: .5rem 0; }
+
+.picker--time .picker__button--clear {
+  color: #fff;
+  background: #ff520d;
+  border-radius: .5rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.picker--time .picker__button--clear:before {
+  width: 0;
+  border-top: 0px solid;
+  display: none; }
+
+/*-------------------------------------
 x. MEDIAS QUERIES
 -------------------------------------*/
 @media (min-width: 768px) {

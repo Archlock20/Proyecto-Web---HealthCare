@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="css/venobox.css">
     <!-- CARGA DEL CSS DE "JARALLAX" (IMAGEN MOVIL) -->
     <link rel="stylesheet" href="css/jarallax.css">
+    <!-- CARGA DE DATEPICKER -->
+    <link rel="stylesheet" href="js/pickadate.js/themes/default.css">
+    <!-- CARGA DE LOS ESTILOS PREDETERMINADOS DE DATEPICKER -->
+    <link rel="stylesheet" href="js/pickadate.js/themes/default.date.css">
+    <!-- CARGA DE LOS ESTILOS PREDETERMINADOS DE TIMEPICKER -->
+    <link rel="stylesheet" href="js/pickadate.js/themes/default.time.css">
     <!-- CARGA DEL CSS PERSONALIZADO -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -189,13 +195,13 @@
             <source media="(min-width:768px)" srcset="images/fondo-te-ayudamos-md.jpg">
             <img srcset="images/fondo-te-ayudamos.jpg" alt="" class="w-100">
         </picture>
-        <div class="container">
+        <div class="container py-lg-3">
             <div class="row py-5">
                 <div class="col-12">
                     <h2 class="display-4 font-weight-bold">¿COMO PODEMOS AYUDARTE?</h2>
                     <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sunt ipsum quibusdam culpa
                         accusantium esse ducimus harum consectetur sapiente molestias quae repellat alias, doloribus,
-                        dolore libero quam a magni voluptate.
+                        dolore libero quam a magni voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis minima necessitatibus a beatae deleniti quaerat suscipit placeat quo fuga?
                     </P>
                     <a href="#" class="btn btn-primary">Reservar una cita</a>
                 </div>
@@ -250,6 +256,8 @@
         </div>
     </section>
 
+    <!-- Seccion "Nuestra APP" -->
+
     <section id="nuestra-app" class="bg-secondary py-5 text-white text-center text-center text-md-left jarallax" data-jarallax data-speed="0.7">
         <picture class="jarallax-img">
             <source media="(min-width:1200px)" srcset="images/fondo-descargar-app-xl.jpg">
@@ -261,8 +269,8 @@
                 <div class="col-12 col-md-6 ">
                     <h2 class="h1 font-weight-bold">DESCARGA NUESTRA APP Y ACCEDE A DESCUENTOS EXCLUSIVOS</h2>
                     <h6 class="text-white-50">SOMOS PARTE DE TI</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias sit repellendus, architecto
-                        magni ducimus odit optio maxime repudiandae iure enim!</p>
+                    <p>Hemos creado una aplicación exclusiva para nuestros clientes. Desde donde podrás acceder a sorteos 
+                        y muchos descuentos especiales.</p>
                     <a href="#" class="btn btn-primary mt-3">Conócenos mas</a>
 
                 </div>
@@ -271,7 +279,125 @@
     </section>
 
 
+    <!-- Seccion "Contactos" -->
+    <section id="contacto">
+        <header class="py-5 bg-primary text-white text-center position-relative">
+            <h2 class="display-4 font-weight-bold">CONTÁCTANOS</h2>
+            <h6 class="text-white-50">ESTAMOS LISTOS PARA ATENDERTE</h6>
+            <div class="detalle-rectangulo"></div>
+        </header>
 
+
+
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-6">
+                    <h2 class="font-weight-bold text-center mb-2">Detalles de Contacto:</h2>
+
+                    <ul class="list-unstyled">
+                        <li class="d-flex border-bottom py-4">
+                            <i class="fas fa-globe fa-3x text-primary mr-4 fa-fw"></i>
+                            <div>
+                                <h5 class="font-weight-bold">Dirección:</h5>
+                                <p class="mb-0">685 N. Ecuador, Milagro, St. La Pradera</p>
+                            </div>
+                        </li>
+
+                        <li class="d-flex border-bottom py-4">
+                            <i class="fas fa-mobile-alt fa-3x text-warning mr-4 fa-fw"></i>
+                            <div>
+                                <h5 class="font-weight-bold">Telefonos:</h5>
+                                <p class="mb-0">(+593) 968-848-880, (+593) 960-856-809</p>
+                            </div>
+                        </li>
+
+                        <li class="d-flex border-bottom py-4">
+                            <i class="fas fa-envelope fa-3x text-danger mr-4 fa-fw"></i>
+                            <div>
+                                <h5 class="font-weight-bold">Email:</h5>
+                                <p class="mb-0">healthcareclinic@gmail.com</p>
+                            </div>
+                        </li>
+
+                        <li class="d-flex border-bottom py-4">
+                            <i class="fab fa-skype fa-3x text-info mr-4 fa-fw"></i>
+                            <div>
+                                <h5 class="font-weight-bold">Skype:</h5>
+                                <p class="mb-0">HealthCareCLNC</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                    <h2 class="font-weight-bold text-center mb-5">Separa una cita:</h2>
+                    <form action="#" id="mi-formulario">
+                        <!-- Campo Nombre -->
+                        <div class="form-group form-row">
+                            <label for="nombre" class="col-form-label col-12 col-md-3">Nombre:</label>
+                            <div class="col-12 col-md-9">
+                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre..." required>
+                            </div>
+                        </div>
+                        <!-- Campo Email -->
+                        <div class="form-group form-row">
+                            <label for="email" class="col-form-label col-12 col-md-3">E-mail:</label>
+                            <div class="col-12 col-md-9">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email..." required>
+                            </div>
+                        </div>
+                        <!-- Campo Celular-->
+                        <div class="form-group form-row">
+                            <label for="celular" class="col-form-label col-12 col-md-3">Celular:</label>
+                            <div class="col-12 col-md-9">
+                                <input type="number" class="form-control" name="celular" id="celular" placeholder="Ingrese su numero celular..." required>
+                            </div>
+                        </div>
+                        <!-- Campo mensaje -->
+                        <div class="form-group form-row">
+                            <label for="mensage" class="col-form-label col-12 col-md-3">Mensaje:</label>
+                            <div class="col-12 col-md-9">
+                                <textarea name="mensage" id="mensage" rows="4" class="form-control" placeholder="Ingrese su mensaje..." 
+                                required></textarea>
+                            </div>
+                        </div>
+                        <!-- Campo Fecha de Cita -->
+                        <div class="form-group form-row">
+                            <label for="fecha-cita" class="col-form-label col-12 col-md-3">Fecha:</label>
+                            <div class="col-12 col-md-9">
+                                <div class="input-group">
+                                   <input type="text" id="fecha-cita" name="fecha-cita" class="form-control datepicker">
+                                   <label class="input-group-append input-group-cita" for="fecha-cita">
+                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                   </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Campo Dia de la Cita -->
+                        <div class="form-group form-row">
+                            <label for="dia-cita" class="col-form-label col-12 col-md-3">Día:</label>
+                            <div class="col-12 col-md-9">
+                                <div class="input-group">
+                                   <input type="text" id="dia-cita" name="dia-cita" class="form-control timepicker">
+                                   <label class="input-group-append input-group-cita" for="dia-cita">
+                                    <span class="input-group-text"><i class="far fa-clock"></i></span>
+                                   </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Campo Enviar -->
+                        <div class="form-group form-row">
+                            <div class="col-12 col-md-9 offset-md-3">
+                                <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- CARGA DE LOS SCRIPS NECESARIOS PARA EL PROYECTO -->
@@ -293,8 +419,14 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <!-- CARGA DE COUNTERUP -->
     <script src="js/jquery.counterup.min.js"></script>
-
-
+    <!-- CARGA DE PICKER.JS (PARA LA CREACION DEL SELECTOR DE FECHA Y HORA) -->
+    <script src="js/pickadate.js/picker.js"></script>
+    <!-- CARGA DE PICKER.JS (PARA LA CREACION DEL SELECTOR DE FECHA Y HORA) -->
+    <script src="js/pickadate.js/picker.js"></script>
+    <!-- CARGA DE PICKER.DATE.JS (PARA LA CREACION DEL SELECTOR DE FECHA UNICAMENTE) -->
+    <script src="js/pickadate.js/picker.date.js"></script>
+    <!-- CARGA DE PICKER.DATE.JS (PARA LA CREACION DEL SELECTOR DE HORAS) -->
+    <script src="js/pickadate.js/picker.time.js"></script>
     <!-- CARGA DE SCRIPS PROPIOS CON DIVERSAS FUNCIONALIDADES -->
     <script src="js/mis-scripts.js"></script>
 
