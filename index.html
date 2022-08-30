@@ -336,21 +336,27 @@
                         <div class="form-group form-row">
                             <label for="nombre" class="col-form-label col-12 col-md-3">Nombre:</label>
                             <div class="col-12 col-md-9">
-                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre..." required>
+                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre..." 
+                                data-parsley-required data-parsley-required-message="¡Este campo no puede estar vacío!">
                             </div>
                         </div>
                         <!-- Campo Email -->
                         <div class="form-group form-row">
                             <label for="email" class="col-form-label col-12 col-md-3">E-mail:</label>
                             <div class="col-12 col-md-9">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email..." required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email..." 
+                                data-parsley-required data-parsley-type="email" data-parsley-required-message="¡Este campo no puede estar vacío!"
+                                data-parsley-type-message="¡Ingrese un email en un formato válido!">
                             </div>
                         </div>
                         <!-- Campo Celular-->
                         <div class="form-group form-row">
                             <label for="celular" class="col-form-label col-12 col-md-3">Celular:</label>
                             <div class="col-12 col-md-9">
-                                <input type="number" class="form-control" name="celular" id="celular" placeholder="Ingrese su numero celular..." required>
+                                <input type="text" class="form-control" name="celular" id="celular" placeholder="Ingrese su numero celular..." 
+                                data-parsley-required data-parsley-length="[5, 20]"
+                                data-parsley-required-message="¡Este campo no puede estar vacío!" 
+                                data-parsley-length-message="El numero telefónico debe tener entre 5 y 20 caractéres">
                             </div>
                         </div>
                         <!-- Campo mensaje -->
@@ -358,7 +364,7 @@
                             <label for="mensage" class="col-form-label col-12 col-md-3">Mensaje:</label>
                             <div class="col-12 col-md-9">
                                 <textarea name="mensage" id="mensage" rows="4" class="form-control" placeholder="Ingrese su mensaje..." 
-                                required></textarea>
+                                data-parsley-required data-parsley-required-message="¡Este campo no puede estar vacío!"></textarea>
                             </div>
                         </div>
                         <!-- Campo Fecha de Cita -->
@@ -366,11 +372,14 @@
                             <label for="fecha-cita" class="col-form-label col-12 col-md-3">Fecha:</label>
                             <div class="col-12 col-md-9">
                                 <div class="input-group">
-                                   <input type="text" id="fecha-cita" name="fecha-cita" class="form-control datepicker">
+                                   <input type="text" id="fecha-cita" name="fecha-cita" class="form-control datepicker" 
+                                   data-parsley-required data-parsley-required-message="¡Este campo no puede estar vacío!"
+                                   data-parsley-errors-container=".error-fecha-cita">
                                    <label class="input-group-append input-group-cita" for="fecha-cita">
                                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                    </label>
                                 </div>
+                                <div class="error-fecha-cita"></div>
                             </div>
                         </div>
                         <!-- Campo Dia de la Cita -->
@@ -378,11 +387,14 @@
                             <label for="dia-cita" class="col-form-label col-12 col-md-3">Día:</label>
                             <div class="col-12 col-md-9">
                                 <div class="input-group">
-                                   <input type="text" id="dia-cita" name="dia-cita" class="form-control timepicker">
+                                   <input type="text" id="dia-cita" name="dia-cita" class="form-control timepicker" 
+                                   data-parsley-required data-parsley-required-message="¡Este campo no puede estar vacío!"
+                                   data-parsley-errors-container=".error-hora-cita">
                                    <label class="input-group-append input-group-cita" for="dia-cita">
                                     <span class="input-group-text"><i class="far fa-clock"></i></span>
                                    </label>
                                 </div>
+                                <div class="error-hora-cita"></div>
                             </div>
                         </div>
                         <!-- Campo Enviar -->
@@ -427,6 +439,9 @@
     <script src="js/pickadate.js/picker.date.js"></script>
     <!-- CARGA DE PICKER.DATE.JS (PARA LA CREACION DEL SELECTOR DE HORAS) -->
     <script src="js/pickadate.js/picker.time.js"></script>
+    <!-- CARGA DE PARSLEY (PARA LA VALIDACION DE LOS CAMPOS DEL FORMULARIO) -->
+    <script src="js/parsley.min.js"></script>
+    <script src="js/parsley.es.js"></script>
     <!-- CARGA DE SCRIPS PROPIOS CON DIVERSAS FUNCIONALIDADES -->
     <script src="js/mis-scripts.js"></script>
 
