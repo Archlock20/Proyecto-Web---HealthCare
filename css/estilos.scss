@@ -426,6 +426,35 @@ body{
 }
 
 
+/*-------------------------------------
+12. ESTILOS PARA LA SECCION "FOOTER"
+-------------------------------------*/
+
+.columna-inclinada::before{
+    content: "";
+    position: absolute;
+    background: $principal;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: -100%;
+}
+
+.enlaces-secundario{
+    border-bottom: 3px solid #5d666f;
+    box-shadow: 0 2px #212529;
+}
+
+.enlaces-secundario a{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
 
 
 /*-------------------------------------
@@ -450,6 +479,13 @@ x. MEDIAS QUERIES
     #te-ayudamos .container{
         transform: skew(0,-2deg);
     }
+
+    .columna-inclinada::before{
+        left: -300%;
+        right: 0;
+        transform: skewX(20deg);
+    }
+
 }
 
 
