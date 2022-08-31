@@ -193,6 +193,14 @@ body{
     background-color: $principal;
 }
 
+/*Estilos para el menú fijo*/
+.menu-fijo{
+    transition: all .5s ease;
+    background-color: darken($secundario, 10%) !important;
+    width: 100% !important;
+}
+
+
 /*-----------------------------------------
 7. ESTILOS PARA EL CARRUSEL DE IMAGENES "#animacion"
 ------------------------------------------*/

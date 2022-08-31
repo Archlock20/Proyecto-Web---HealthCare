@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-------------------------------------
 1. TIPOGRAFIA DEL SITIO
 -------------------------------------*/
@@ -170,6 +171,13 @@ body {
 /*Estilos para el enlace activo*/
 .navbar-dark .navbar-nav .nav-link.active {
   background-color: #1995AC; }
+
+/*Estilos para el menú fijo*/
+.menu-fijo {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #1d1e21 !important;
+  width: 100% !important; }
 
 /*-----------------------------------------
 7. ESTILOS PARA EL CARRUSEL DE IMAGENES "#animacion"
