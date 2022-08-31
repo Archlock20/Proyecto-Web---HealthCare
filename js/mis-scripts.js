@@ -137,7 +137,7 @@ $(function () {
              7. INICIANDO "page-scroll-to-id"
      -------------------------------------------------------------*/
 
-    $('#menu-principal a').mPageScroll2id({
+    $('#menu a').mPageScroll2id({
         offset: 50,
         highlightClass:'active'
     });

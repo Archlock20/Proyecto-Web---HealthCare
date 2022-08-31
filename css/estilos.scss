@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    font-family: 'Arial';
+    font-family: 'Lato' sans-serif;
     color: $texto;
 }
 
@@ -464,9 +464,16 @@ body{
     display: block;
 }
 
+/*-------------------------------------
+13. ESTILOS PARA COMPATIBILIDAD CON IE11
+-------------------------------------*/
+.ie11 #bienvenidos .contenedor-video img{
+    width: 100%;
+}
 
-
-
+.ie11 .navbar-dark .navbar-nav .nav-link::after{
+    display: block;
+}
 
 
 /*-------------------------------------
@@ -475,8 +482,9 @@ x. MEDIAS QUERIES
 
 @media (min-width:768px) {
     .navbar-dark .navbar-nav .nav-link{
-        padding: 0.7rem 1.2rem;
+        padding: 0.7rem 1rem;
         border-radius: 1.5rem;
+        margin-left: 1rem;
     }
     
     .navbar-dark .navbar-nav .nav-link:after{
